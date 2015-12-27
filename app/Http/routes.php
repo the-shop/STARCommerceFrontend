@@ -27,5 +27,10 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+
+    /**
+     * View Cart route
+     */
+    Route::get('/checkout/cart', 'Checkout\CartController@view');
+
 });
